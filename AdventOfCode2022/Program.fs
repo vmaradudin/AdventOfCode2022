@@ -4,5 +4,6 @@
 
 [|
 Day01.Solution
+Day02.Solution
 |]
 |> Array.iter id
