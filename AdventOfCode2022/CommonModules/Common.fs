@@ -28,4 +28,4 @@ module Types =
 module Tools =
     let flatten array = 
         seq {for x in 0..((Array2D.length1 array)-1) -> array[x,*]}
-        |> Seq.collect id
+        |> Seq.collect id |> Array.ofSeq

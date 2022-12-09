@@ -12,9 +12,9 @@ module Day02Tests =
         |]  
     
     [<Fact>]
-    let ``Day 1 Puzzle 1`` () =
+    let ``Day 2 Puzzle 1`` () =
         Assert.Equal(15, puzzle1 testInput)
     
     [<Fact>]
-    let ``Day 1 Puzzle 2`` () =
+    let ``Day 2 Puzzle 2`` () =
         Assert.Equal(12, puzzle2 testInput)      
