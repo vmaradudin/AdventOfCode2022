@@ -1,6 +1,7 @@
 ﻿namespace AdventOfCode2022
 
 open Common.Types
+open System
 
 module Day09 =
     let pullKnot (prevKnotX,prevKnotY) (knotX, knotY)=
@@ -19,6 +20,7 @@ module Day09 =
         | "L" -> headX - 1, headY
         | "U" -> headX, headY + 1
         | "D" -> headX, headY - 1
+        | unknownCommand -> new Exception($"Unknown command '{unknownCommand}'") |> raise
 
     let pullRopeKnot rope theKnot =
         let lastKnot = rope |> Seq.last
